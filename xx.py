@@ -8,7 +8,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 url="https://filebin.net"
 driver.get(url)
 driver.maximize_window()
-time.sleep(3)
+time.sleep(5)
 select_file = driver.find_element(By.XPATH,("//input[@id='fileField']"))
 select_file.send_keys("C:/Users/ACER/Downloads/download.jpg")
 time.sleep(5)
